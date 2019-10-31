@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="17.2.2">
+      <meta name="viewport" content="width=device-width", initial-scale="1">
+      <title>Demystifying ML</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rakkas">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo">
+      <!-- Leaflet CSS & JS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+         crossorigin="" />
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+         crossorigin=""></script>
+      <!--D3 cdn-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <nav class="navbar">
+            <a class="navbar-brand" href="index.html"> Demystifying ML </a>
+            <div class="navbar-right">
+               <div class="dropdown">
+                  <button class="dropdown-toggle" data-toggle="dropdown"> Analysis 
+                  <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                     <li><a href="model_1.html"> Crash Hour vs. Posted Speed Limit </a></li>
+                     <li><a href="model_2.html"> Crashes Are Expensive </a></li>
+                     <li><a href="model_3.html"> Weather And Injuries </a></li>
+                     <li><a href="model_4.html"> Road Condition & Crash Type </a></li>
+                     <li><a href="log-regression.html"> Logistic Regression </a></li>
+                  </ul>
+               </div>
+               <a href="our-approach.html">Our Approach</a>
+               <a href="heat-map.html">Heat Map</a>
+               <a href="model-gallery.html">Gallery</a>
+               <a href="data.html"> Sample Raw Data </a>
+               <a href="about-us.html"> About Us </a>
+            </div>
+         </nav>
+      </div>
+      <div id="map"></div>
+      <!-- API key and other constants -->
+      <script type="text/javascript" src="js/config.js"></script>
+      <!-- JS -->
+      <!-- <script type="text/javascript" src="static/js/just-crime.js"></script> -->
+      <script type="text/javascript" src="js/heatmap.js"></script>
+      <!-- Leaflet heatmap plugin-->
+      <script type="text/javascript" src="js/leaflet-heat.js"></script>
+   </body>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
